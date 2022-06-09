@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://unpkg.com/phosphor-icons"></script>
+	<title>La p'tite bourgoise - Accueil</title>
+	<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3125/3125848.png" />
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+			text-align: center;
+		}
+		nav{
+			position: fixed;
+			top:10px;
+			left:10px;
+			right:10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 10;
+			border-radius: 90px;
+			background-color: rgba(255, 255, 255, .75);
+			backdrop-filter: blur(10px);
+		}
+		nav .left{
+			margin: 15px 25px;
+		}
+		nav .right{
+			display: flex;
+			margin: 5px 7px;
+			align-items: center;
+		}
+		nav .right p{
+			margin-left: 20px;
+			cursor: pointer;
+			padding: 15px 25px;
+			border-radius: 90px;
+			transition-duration: .25s;
+			display: flex;
+			align-items: center;
+		}
+		nav .right p.main{
+			background-color: rgba(255, 255, 255, .75);
+		}
+		nav .right p:hover{
+			box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, .25);
+			background-color: rgba(255, 255, 255, .75);
+		}
+		header{
+			position: fixed;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index: 5;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			background-image: url(https://images.unsplash.com/photo-1457537227909-08f41319e53c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		header .logo{
+			font-size: 75px;
+			margin-bottom: 25px;
+			opacity: .75;
+		}
+		header button{
+			margin-left: 20px;
+			cursor: pointer;
+			padding: 15px 25px;
+			border-radius: 90px;
+			transition-duration: .25s;
+			box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, .25);
+			background-color: rgba(255, 255, 255, .75);
+			border: none;
+			display: flex;
+			align-items: center;
+			backdrop-filter: blur(10px);
+		}
+		header button:hover{
+			transform: scale(1.1);
+		}
+		header button:active{
+			transform: scale(0.99);
+		}
+		.insta{
+			position: fixed;
+			bottom:10px;
+			left:10px;
+			z-index: 10;
+			display: flex;
+			align-items: center;
+			border-radius: 90px;
+			background-color: rgba(255, 255, 255, .75);
+			backdrop-filter: blur(10px);
+			padding: 5px 15px;
+			cursor: pointer;
+		}
+		.insta i{
+			margin-right: 5px;
+			font-size: 20px;
+		}
+		button i{
+			margin-left: 5px;
+			font-size: 20px;
+		}
+		nav p i{
+			margin-right: 5px;
+			font-size: 20px;
+		}
+		.logo{
+			font-family: 'Lobster', cursive;
+		}
+		p.mobile{
+			display: none !important;
+		}
+		.mobile i{
+			margin: 0;
+			padding: 0;
+		}
+		@media screen and (max-width: 640px) {
+			nav p{
+				display:none !important;
+			}
+			p.mobile {
+				display:flex !important;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="left"><h2 class="logo">La p'tite bourgoise</h2></div>
+		<div class="right">
+			<p><i class="ph-house"></i>Accueil</p>
+			<p><i class="ph-globe-hemisphere-east"></i>Destinations</p>
+			<p><i class="ph-thumbs-up"></i>Critiques</p>
+			<p><i class="ph-newspaper-clipping"></i>Blog</p>
+			<p class="main"><i class="ph-chat"></i>Nous contacter</p>
+			<p class="mobile main"><i class="ph-list"></i></p>
+		</div>
+	</nav>
+	<header>
+		<h2 class="logo">La p'tite bourgoise</h2>
+		<button>Réserver maintenant<i class="ph-calendar-plus"></i></button>
+	</header>
+	<p class="insta"><i class="ph-instagram-logo"></i>@la-ptite-bourgeoise</p>
+</body>
+</html>
